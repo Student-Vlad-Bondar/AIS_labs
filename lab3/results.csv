@@ -1,0 +1,11 @@
+section,model_or_variant,setting,params_M,val_loss,accuracy,f1,inference_sec
+Section 3 (mini-GPT),minigpt_v1,"ctx=64, layers=4, heads=4, dim=128, drop=0.1",3.88,5.888,,,
+Section 3 (mini-GPT),minigpt_v2,"ctx=128, layers=4, heads=4, dim=128, drop=0.2",3.89,5.8773,,,
+Section 3 (mini-GPT),minigpt_v3,"ctx=128, layers=6, heads=6, dim=192, drop=0.15",7.31,5.6513,,,
+Section 5.2 (Model Comparison),cardiffnlp/twitter-xlm-roberta-base-sentiment,"default (threshold=0.50, max_length=128)",278.0,,0.9,0.9,0.3528
+Section 5.2 (Model Comparison),lxyuan/distilbert-base-multilingual-cased-sentiments-student,"default (threshold=0.50, max_length=128)",135.3,,0.75,0.7059,0.1216
+Section 5.2 (Model Comparison),nlptown/bert-base-multilingual-uncased-sentiment,"default (threshold=0.50, max_length=128)",167.4,,0.85,0.8235,0.2248
+Section 5.3 (Hyperparameter Tuning),cardiffnlp/twitter-xlm-roberta-base-sentiment,"Baseline (thresh=0.50, max_len=128)",278.0,,0.9,0.9,0.2314
+Section 5.3 (Hyperparameter Tuning),cardiffnlp/twitter-xlm-roberta-base-sentiment,"Exp 1: Підвищений поріг впевненості (thresh=0.80, max_len=128)",278.0,,0.75,0.7059,0.2216
+Section 5.3 (Hyperparameter Tuning),cardiffnlp/twitter-xlm-roberta-base-sentiment,"Exp 2: Знижений поріг впевненості (thresh=0.35, max_len=128)",278.0,,0.9,0.9,0.2291
+Section 5.3 (Hyperparameter Tuning),cardiffnlp/twitter-xlm-roberta-base-sentiment,"Exp 3: Жорстке обрізання контексту (thresh=0.50, max_len=7)",278.0,,0.65,0.6957,0.2229
